@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IWB - Software Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url(tools.png);
+        }
+
+        header {
+            background-color: #005a87;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffd700;
+            color: #005a87;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #005a87;
+        }
+
+        .tool {
+            background-color: #eef7fc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #005a87;
+            border-radius: 8px;
+        }
+
+        .tool h3 {
+            color: #005a87;
+        }
+
+        .subscription-form {
+            margin-top: 10px;
+        }
+
+        .subscription-form input {
+            padding: 8px;
+            width: 200px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .subscription-form button {
+            padding: 8px 12px;
+            background-color: #ee9b00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .subscription-form button:hover {
+            background-color: #ca7700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IWB - Data Recovery & Destruction Software</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="tools.html">Software Tools</a></li>
+                <li><a href="stakeholders.html">Stakeholders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Software Solutions</h2>
+        
+        <div class="tool">
+            <h3>Data Eraser Pro</h3>
+            <p>Ensure complete and irreversible data deletion with military-grade algorithms.</p>
+            <p><strong>Subscription:</strong> M50/month | M500/year</p>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="tool">
+            <h3>Hard Drive Restore</h3>
+            <p>Recover deleted or corrupted files from hard drives and SSDs with AI-powered scanning.</p>
+            <p><strong>Subscription:</strong> M60/month | M600/year</p>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="tool">
+            <h3>RAM Booster</h3>
+            <p>Optimize your system's memory usage for better speed and performance.</p>
+            <p><strong>Subscription:</strong> M40/month | M400/year</p>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="tool">
+            <h3>Secure Disk Wiper</h3>
+            <p>Wipe entire drives to prevent forensic recovery and maintain data security.</p>
+            <p><strong>Subscription:</strong> M70/month | M700/year</p>
+            <form class="subscription-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 IWB. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const forms = document.querySelectorAll(".subscription-form");
+
+            forms.forEach(form => {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    const email = form.querySelector("input").value;
+
+                    form.reset();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
